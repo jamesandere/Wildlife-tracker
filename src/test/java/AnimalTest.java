@@ -1,9 +1,9 @@
-// import org.junit.*;
-// import static org.junit.Assert.*;
-// import org.sql2o.*;
-// import java.util.ArrayList;
-// import java.util.List;
-// import java.util.Arrays;
+import org.junit.*;
+import static org.junit.Assert.*;
+import org.sql2o.*;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Arrays;
 
 // public class AnimalTest {
 //   @Rule
@@ -28,13 +28,13 @@
 //     assertTrue(firstAnimal.equals(anotherAnimal));
 //   }
 
-//   @Test
-//   public void save_assignsIdToObjectAndSavesObjectToDatabase() {
-//     Animal testAnimal = new Animal("Deer");
-//     testAnimal.save();
-//     Animal savedAnimal = Animal.all().get(0);
-//     assertEquals(testAnimal.getId(), savedAnimal.getId());
-//   }
+  @Test
+  public void save_assignsIdToObjectAndSavesObjectToDatabase() {
+    Animal testAnimal = new Animal("Deer");
+    testAnimal.save();
+    Animal savedAnimal = Animal.all().get(0);
+    assertEquals(testAnimal.getId(), savedAnimal.getId());
+  }
 
 //   @Test
 //   public void all_returnsAllInstancesOfAnimal_false() {
