@@ -36,15 +36,15 @@ import java.util.Arrays;
     assertEquals(testAnimal.getId(), savedAnimal.getId());
   }
 
-//   @Test
-//   public void all_returnsAllInstancesOfAnimal_false() {
-//     Animal firstAnimal = new Animal("Deer");
-//     firstAnimal.save();
-//     Animal secondAnimal = new Animal("Black Bear");
-//     secondAnimal.save();
-//     assertEquals(true, Animal.all().get(0).equals(firstAnimal));
-//     assertEquals(true, Animal.all().get(1).equals(secondAnimal));
-//   }
+  @Test
+  public void all_returnsAllInstancesOfAnimal_false() {
+    Animal firstAnimal = new Animal("Deer");
+    firstAnimal.save();
+    Animal secondAnimal = new Animal("Black Bear");
+    secondAnimal.save();
+    assertEquals(true, Animal.all().get(0).equals(firstAnimal));
+    assertEquals(true, Animal.all().get(1).equals(secondAnimal));
+  }
 
 //   @Test
 //   public void find_returnsAnimalWithSameId_secondAnimal() {
