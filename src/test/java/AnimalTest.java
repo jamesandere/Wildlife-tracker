@@ -46,14 +46,14 @@ import java.util.Arrays;
     assertEquals(true, Animal.all().get(1).equals(secondAnimal));
   }
 
-//   @Test
-//   public void find_returnsAnimalWithSameId_secondAnimal() {
-//     Animal firstAnimal = new Animal("Deer");
-//     firstAnimal.save();
-//     Animal secondAnimal = new Animal("Black Bear");
-//     secondAnimal.save();
-//     assertEquals(Animal.find(secondAnimal.getId()), secondAnimal);
-//   }
+  @Test
+  public void find_returnsAnimalWithSameId_secondAnimal() {
+    Animal firstAnimal = new Animal("Deer");
+    firstAnimal.save();
+    Animal secondAnimal = new Animal("Black Bear");
+    secondAnimal.save();
+    assertEquals(Animal.find(secondAnimal.getId()), secondAnimal);
+  }
 
 //   @Test
 //   public void delete_deletesAnimalFromDatabase_0() {
