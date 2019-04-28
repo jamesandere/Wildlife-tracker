@@ -55,19 +55,19 @@ import java.util.Arrays;
     assertEquals(Animal.find(secondAnimal.getId()), secondAnimal);
   }
 
-//   @Test
-//   public void delete_deletesAnimalFromDatabase_0() {
-//     Animal testAnimal = new Animal("Deer");
-//     testAnimal.save();
-//     testAnimal.delete();
-//     assertEquals(0, Animal.all().size());
-//   }
+  @Test
+  public void delete_deletesAnimalFromDatabase_0() {
+    Animal testAnimal = new Animal("Deer");
+    testAnimal.save();
+    testAnimal.delete();
+    assertEquals(0, Animal.all().size());
+  }
 
-//   public void updateName_updatesAnimalNameInDatabase_String() {
-//     Animal testAnimal = new Animal("Deer");
-//     testAnimal.save();
-//     testAnimal.updateName("Buck");
-//     assertEquals("Buck", testAnimal.getName());
-//   }
+  public void updateName_updatesAnimalNameInDatabase_String() {
+    Animal testAnimal = new Animal("Deer");
+    testAnimal.save();
+    testAnimal.updateName("Buck");
+    assertEquals("Buck", testAnimal.getName());
+  }
 
-// }
+}
