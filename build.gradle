@@ -1,0 +1,12 @@
+apply plugin: 'java'
+apply plugin: 'application'
+
+archivesBaseName = "wildlife"
+version = '1.0'
+applicationName = "wildlife"
+mainClassName = "App"
+
+repositories {
+  mavenCentral()
+}
+
