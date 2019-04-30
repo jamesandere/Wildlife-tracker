@@ -1,5 +1,4 @@
 .custom-select {
-  /* position: relative; */
   font-family: Arial;
 }
 
@@ -18,8 +17,25 @@
 body{
   background: linear-gradient(to right, #ada996, #f2f2f2, #dbdbdb, #eaeaea); 
   font-size: 20px;
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("images/rhino.jpg");
+  color: white;
  }
 
  h1{
 	text-align: center;
+}
+
+ul>li>a{
+  color: white;
+}
+.well{
+  color: black;
+}
+
+#but{
+  margin-top: 30px;
+}
+#but>a{
+  color: white;
+  font-size: 10px;
 }
